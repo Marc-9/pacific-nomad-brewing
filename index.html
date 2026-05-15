@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Nomad Brewing — Hand-brewed in Davis, California</title>
+  <meta name="description" content="A small-batch brewery in Davis, California. Wild yeasts, neighborhood fruit, slow methods. By appointment only." />
+  <meta name="theme-color" content="#1B1410" />
+
+  <meta property="og:title" content="Pacific Nomad Brewing" />
+  <meta property="og:description" content="Hand-brewed beer from Davis, California — wild yeasts, neighborhood fruit, slow methods." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pacificnomadbrewing.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..900,30..100,0..1;1,9..144,200..900,30..100,0..1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='80' font-family='serif'%3E🌿%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav__mark" aria-label="Pacific Nomad Brewing — home">
+      <span class="nav__mark-pn">PN</span>
+      <span class="nav__mark-dot" aria-hidden="true">·</span>
+      <span class="nav__mark-bw">B</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#almanac">Almanac</a></li>
+      <li><a href="#tap">On Tap</a></li>
+      <li><a href="#cellar">Cellar</a></li>
+      <li><a href="#gathering">Gatherings</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a href="#visit" class="nav__cta">
+      <span>By Appointment</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <header class="hero" id="top">
+
+    <div class="hero__masthead">
+      <span class="hero__rule">Vol. VII · No. 02 · Spring</span>
+      <span class="hero__rule hero__rule--center">— The Brewing Almanac —</span>
+      <span class="hero__rule hero__rule--right">Davis · California · est. 2018</span>
+    </div>
+
+    <div class="hero__inner">
+      <h1 class="hero__title" aria-label="Pacific Nomad Brewing">
+        <span class="hero__title-row">
+          <span class="hero__word" data-word="PACIFIC">
+            <span class="hero__char" style="--i:0">P</span><span class="hero__char" style="--i:1">A</span><span class="hero__char" style="--i:2">C</span><span class="hero__char" style="--i:3">I</span><span class="hero__char" style="--i:4">F</span><span class="hero__char" style="--i:5">I</span><span class="hero__char" style="--i:6">C</span>
+          </span>
+        </span>
+        <span class="hero__title-row hero__title-row--with-seal">
+          <span class="hero__seal-wrap" aria-hidden="true">
+            <!-- inline seal -->
+            <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="Pacific Nomad Brewing seal">
+              <defs>
+                <path id="seal-arc-top" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0" />
+                <path id="seal-arc-bottom" d="M 100,100 m 78,0 a 78,78 0 1,1 -156,0" />
+              </defs>
+              <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="0.6"/>
+              <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="0.4"/>
+              <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="0.4"/>
+              <text class="seal__text" font-size="9.6" letter-spacing="3.4">
+                <textPath href="#seal-arc-top" startOffset="50%" text-anchor="middle">PACIFIC · NOMAD · BREWING</textPath>
+              </text>
+              <text class="seal__text" font-size="7.6" letter-spacing="3">
+                <textPath href="#seal-arc-bottom" startOffset="50%" text-anchor="middle">— DAVIS · CALIFORNIA —</textPath>
+              </text>
+              <!-- ornamental dots flanking -->
+              <circle cx="20" cy="100" r="1.4" fill="currentColor"/>
+              <circle cx="180" cy="100" r="1.4" fill="currentColor"/>
+              <!-- center hop cone -->
+              <g transform="translate(100,100)" class="seal__hop">
+                <!-- Stem -->
+                <path d="M 0,-44 L 0,-30" stroke="currentColor" stroke-width="1" fill="none"/>
+                <!-- Leaves -->
+                <path d="M 0,-38 Q -10,-44 -14,-36 Q -8,-34 0,-36 Z" fill="currentColor" opacity="0.85"/>
+                <path d="M 0,-38 Q 10,-44 14,-36 Q 8,-34 0,-36 Z" fill="currentColor" opacity="0.85"/>
+                <!-- Hop cone bracts (overlapping) -->
+                <g fill="currentColor">
+                  <path d="M -16,-26 Q 0,-34 16,-26 Q 0,-20 -16,-26 Z" opacity="0.95"/>
+                  <path d="M -19,-18 Q 0,-26 19,-18 Q 0,-10 -19,-18 Z" opacity="0.85"/>
+                  <path d="M -22,-8 Q 0,-16 22,-8 Q 0,0 -22,-8 Z" opacity="0.75"/>
+                  <path d="M -22,2 Q 0,-6 22,2 Q 0,12 -22,2 Z" opacity="0.65"/>
+                  <path d="M -20,12 Q 0,4 20,12 Q 0,22 -20,12 Z" opacity="0.55"/>
+                  <path d="M -16,22 Q 0,14 16,22 Q 0,30 -16,22 Z" opacity="0.45"/>
+                </g>
+              </g>
+            </svg>
+          </span>
+          <span class="hero__word hero__word--right" data-word="NOMAD">
+            <span class="hero__char" style="--i:7">N</span><span class="hero__char" style="--i:8">O</span><span class="hero__char" style="--i:9">M</span><span class="hero__char" style="--i:10">A</span><span class="hero__char" style="--i:11">D</span>
+          </span>
+        </span>
+        <span class="hero__title-row hero__title-row--brewing">
+          <span class="hero__brewing">
+            <span class="hero__char" style="--i:12">B</span><span class="hero__char" style="--i:13">R</span><span class="hero__char" style="--i:14">E</span><span class="hero__char" style="--i:15">W</span><span class="hero__char" style="--i:16">I</span><span class="hero__char" style="--i:17">N</span><span class="hero__char" style="--i:18">G</span>
+          </span>
+        </span>
+      </h1>
+
+      <figure class="hero__quote">
+        <svg class="hero__flourish" viewBox="0 0 200 20" aria-hidden="true">
+          <path d="M 0 10 L 80 10 M 200 10 L 120 10" stroke="currentColor" stroke-width="0.6"/>
+          <circle cx="100" cy="10" r="2" fill="currentColor"/>
+          <circle cx="90" cy="10" r="0.8" fill="currentColor"/>
+          <circle cx="110" cy="10" r="0.8" fill="currentColor"/>
+        </svg>
+        <blockquote>
+          “A person working with their hands, brain, and heart <em>is an artist.</em>”
+        </blockquote>
+        <figcaption>— our governing principle —</figcaption>
+      </figure>
+    </div>
+
+    <a href="#almanac" class="hero__scroll" aria-label="Scroll to almanac">
+      <span>begin reading</span>
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+    </a>
+  </header>
+
+  <!-- ═══════════════ ALMANAC / ABOUT ═══════════════ -->
+  <section class="almanac" id="almanac">
+    <div class="section__head">
+      <span class="section__label">§ I</span>
+      <h2 class="section__title">A small brewery, by hand.</h2>
+      <span class="section__label section__label--right">Field notes</span>
+    </div>
+
+    <div class="almanac__body">
+      <div class="almanac__col almanac__col--lead">
+        <p class="almanac__lede">
+          <span class="dropcap">P</span>acific Nomad began in a garage on a quiet street in Davis, with one fermenter, a notebook of hand-drawn diagrams, and the stubborn idea that a beer should taste like the place it was made — not like every other can on the shelf.
+        </p>
+        <p>
+          Every batch is brewed by one person, after weeks of meticulous research. Wild yeasts coaxed from the air over Norwegian farmsteads. Pomegranates picked from a friend's tree on D Street. Hops weighed, water adjusted, temperature watched. No shortcuts. No marketing department. No flagship.
+        </p>
+        <p>
+          What we make rotates with the seasons and the harvest. We open the doors by appointment — pour you what's on, talk you through how it came to be, and send you off with a bottle if there's one to spare.
+        </p>
+      </div>
+
+      <aside class="almanac__col almanac__col--side">
+        <div class="card-stat">
+          <span class="card-stat__num">7</span>
+          <span class="card-stat__label">Years brewing in Davis</span>
+        </div>
+        <div class="card-stat">
+          <span class="card-stat__num">1</span>
+          <span class="card-stat__label">Pair of hands per batch</span>
+        </div>
+        <div class="card-stat">
+          <span class="card-stat__num">∞</span>
+          <span class="card-stat__label">Recipes worth trying</span>
+        </div>
+        <div class="card-stat card-stat--quote">
+          <span class="card-stat__quote">“No flagship. Only the next one we couldn't stop thinking about.”</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ON TAP ═══════════════ -->
+  <section class="tap" id="tap">
+    <div class="section__head section__head--inverse">
+      <span class="section__label">§ II</span>
+      <h2 class="section__title">On Tap This Season</h2>
+      <span class="section__label section__label--right">Spring · 2026</span>
+    </div>
+
+    <p class="tap__intro">
+      What's pouring right now. Lists rotate; if you're driving in for one in particular, text us first.
+    </p>
+
+    <div class="tap__grid">
+
+      <!-- 01 GRAPEFRUIT IPA -->
+      <article class="beer">
+        <header class="beer__head">
+          <span class="beer__index">Nº 01</span>
+          <span class="beer__season">Spring · seasonal</span>
+        </header>
+
+        <div class="beer__glass" aria-hidden="true">
+          <!-- Tulip glass with grapefruit IPA -->
+          <svg viewBox="0 0 120 200">
+            <defs>
+              <clipPath id="clip-01">
+                <path d="M 30 60 Q 30 110 38 140 Q 42 158 50 165 L 70 165 Q 78 158 82 140 Q 90 110 90 60 Z"/>
+              </clipPath>
+            </defs>
+            <!-- foam -->
+            <g clip-path="url(#clip-01)">
+              <rect x="20" y="55" width="80" height="20" fill="var(--foam)"/>
+              <rect x="20" y="65" width="80" height="105" fill="#E89C3A"/>
+            </g>
+            <!-- foam top bumps -->
+            <path d="M 30 60 Q 36 52 42 58 Q 48 50 54 58 Q 60 50 66 58 Q 72 50 78 58 Q 84 52 90 60" fill="var(--foam)" stroke="var(--ink)" stroke-width="0.7"/>
+            <!-- glass outline -->
+            <path d="M 30 60 Q 30 110 38 140 Q 42 158 50 165 L 70 165 Q 78 158 82 140 Q 90 110 90 60 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <!-- stem -->
+            <path d="M 58 165 L 58 185 L 45 192 M 62 165 L 62 185 L 75 192" stroke="var(--ink)" stroke-width="1.2" fill="none"/>
+            <!-- bubbles -->
+            <circle cx="50" cy="110" r="1.5" fill="var(--foam)" opacity="0.7"/>
+            <circle cx="65" cy="125" r="1" fill="var(--foam)" opacity="0.7"/>
+            <circle cx="55" cy="135" r="1.2" fill="var(--foam)" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <div class="beer__body">
+          <h3 class="beer__name">Grapefruit <span>IPA</span></h3>
+          <dl class="beer__stats">
+            <div><dt>ABV</dt><dd>7.0%</dd></div>
+            <div><dt>Style</dt><dd>West Coast IPA</dd></div>
+            <div><dt>Glass</dt><dd>Tulip</dd></div>
+          </dl>
+          <p class="beer__desc">
+            Spring seasonal. Freshly harvested grapefruit from a tree on D Street, peeled and zested by hand. Crisp, mild bitterness, citrus rind on the finish.
+          </p>
+          <ul class="beer__notes">
+            <li>citrus</li><li>crisp</li><li>mild</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 02 BROWNIES & MILK -->
+      <article class="beer">
+        <header class="beer__head">
+          <span class="beer__index">Nº 02</span>
+          <span class="beer__season">Winter · cellar release</span>
+        </header>
+
+        <div class="beer__glass" aria-hidden="true">
+          <!-- Snifter -->
+          <svg viewBox="0 0 120 200">
+            <defs>
+              <clipPath id="clip-02">
+                <path d="M 22 95 Q 22 145 50 162 L 70 162 Q 98 145 98 95 Q 98 75 80 70 L 40 70 Q 22 75 22 95 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#clip-02)">
+              <rect x="20" y="68" width="80" height="14" fill="#D4B898"/>
+              <rect x="20" y="78" width="80" height="100" fill="#1A0F0A"/>
+            </g>
+            <!-- foam top -->
+            <path d="M 40 70 Q 46 64 52 70 Q 60 62 68 70 Q 74 64 80 70" fill="#D4B898" stroke="var(--ink)" stroke-width="0.7"/>
+            <path d="M 22 95 Q 22 145 50 162 L 70 162 Q 98 145 98 95 Q 98 75 80 70 L 40 70 Q 22 75 22 95 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M 60 162 L 60 180 M 45 192 L 75 192" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M 45 192 Q 60 196 75 192" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+          </svg>
+        </div>
+
+        <div class="beer__body">
+          <h3 class="beer__name">Brownies <span>&amp;</span> Milk</h3>
+          <dl class="beer__stats">
+            <div><dt>ABV</dt><dd>12.0%</dd></div>
+            <div><dt>Style</dt><dd>Imperial Milk Stout</dd></div>
+            <div><dt>Glass</dt><dd>Snifter</dd></div>
+          </dl>
+          <p class="beer__desc">
+            A winter strong dark ale that drinks like dessert. Fudge brownie corner, lactose-soft body, baker's chocolate at the long, warming end.
+          </p>
+          <ul class="beer__notes">
+            <li>cocoa</li><li>dessert</li><li>warming</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 03 NEW HAZE -->
+      <article class="beer">
+        <header class="beer__head">
+          <span class="beer__index">Nº 03</span>
+          <span class="beer__season">Year-round favorite</span>
+        </header>
+
+        <div class="beer__glass" aria-hidden="true">
+          <!-- Teku glass -->
+          <svg viewBox="0 0 120 200">
+            <defs>
+              <clipPath id="clip-03">
+                <path d="M 28 72 L 32 145 L 48 158 L 72 158 L 88 145 L 92 72 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#clip-03)">
+              <rect x="20" y="68" width="80" height="14" fill="#F2E2B0"/>
+              <rect x="20" y="78" width="80" height="100" fill="#DAB14C"/>
+            </g>
+            <path d="M 28 72 Q 36 64 44 72 Q 52 64 60 72 Q 68 64 76 72 Q 84 64 92 72" fill="#F2E2B0" stroke="var(--ink)" stroke-width="0.7"/>
+            <path d="M 28 72 L 32 145 L 48 158 L 72 158 L 88 145 L 92 72 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M 60 158 L 60 185 L 42 192 L 78 192 L 60 185" stroke="var(--ink)" stroke-width="1.2" fill="none"/>
+            <circle cx="50" cy="100" r="1.4" fill="#F2E2B0" opacity="0.6"/>
+            <circle cx="68" cy="115" r="1.2" fill="#F2E2B0" opacity="0.6"/>
+            <circle cx="55" cy="130" r="1" fill="#F2E2B0" opacity="0.6"/>
+          </svg>
+        </div>
+
+        <div class="beer__body">
+          <h3 class="beer__name">New <span>Haze</span></h3>
+          <dl class="beer__stats">
+            <div><dt>ABV</dt><dd>8.0%</dd></div>
+            <div><dt>Style</dt><dd>NE Double IPA</dd></div>
+            <div><dt>Glass</dt><dd>Teku</dd></div>
+          </dl>
+          <p class="beer__desc">
+            Soft, hazy, cloudbank-pale. Stone fruit on the front, tropical mango through the middle, grapefruit at the close. Pillowy and very drinkable for the strength.
+          </p>
+          <ul class="beer__notes">
+            <li>stone fruit</li><li>tropical</li><li>pillowy</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 04 VOSSAØL -->
+      <article class="beer">
+        <header class="beer__head">
+          <span class="beer__index">Nº 04</span>
+          <span class="beer__season">Wild · single batch</span>
+        </header>
+
+        <div class="beer__glass" aria-hidden="true">
+          <!-- Wine glass -->
+          <svg viewBox="0 0 120 200">
+            <defs>
+              <clipPath id="clip-04">
+                <path d="M 26 70 Q 24 110 38 138 Q 46 156 60 158 Q 74 156 82 138 Q 96 110 94 70 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#clip-04)">
+              <rect x="20" y="68" width="80" height="10" fill="#EFD9B0"/>
+              <rect x="20" y="74" width="80" height="100" fill="#B6661E"/>
+            </g>
+            <path d="M 26 70 Q 34 64 42 70 Q 50 64 58 70 Q 66 64 74 70 Q 82 64 90 70 Q 92 70 94 70" fill="#EFD9B0" stroke="var(--ink)" stroke-width="0.6"/>
+            <path d="M 26 70 Q 24 110 38 138 Q 46 156 60 158 Q 74 156 82 138 Q 96 110 94 70 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M 60 158 L 60 188 L 42 194 L 78 194 L 60 188" stroke="var(--ink)" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="beer__body">
+          <h3 class="beer__name">California <span>Terroir</span> Vossaøl</h3>
+          <dl class="beer__stats">
+            <div><dt>ABV</dt><dd>6.5%</dd></div>
+            <div><dt>Style</dt><dd>Norwegian farmhouse</dd></div>
+            <div><dt>Yeast</dt><dd>Wild · Voss</dd></div>
+          </dl>
+          <p class="beer__desc">
+            A farmhouse ale brewed with kveik yeast traced back to a Norwegian farmstead, fermented warm in our Davis garage. Orange peel, faint spice, surprisingly clean.
+          </p>
+          <ul class="beer__notes">
+            <li>kveik</li><li>orange</li><li>farmhouse</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 05 POMEGRANATE CIDER -->
+      <article class="beer">
+        <header class="beer__head">
+          <span class="beer__index">Nº 05</span>
+          <span class="beer__season">Annual release · GF</span>
+        </header>
+
+        <div class="beer__glass" aria-hidden="true">
+          <!-- Champagne flute -->
+          <svg viewBox="0 0 120 200">
+            <defs>
+              <clipPath id="clip-05">
+                <path d="M 48 62 L 50 158 L 70 158 L 72 62 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#clip-05)">
+              <rect x="40" y="60" width="40" height="8" fill="#F4D2D8"/>
+              <rect x="40" y="65" width="40" height="100" fill="#C84B5E"/>
+            </g>
+            <path d="M 48 62 Q 54 56 60 62 Q 66 56 72 62" fill="#F4D2D8" stroke="var(--ink)" stroke-width="0.6"/>
+            <path d="M 48 62 L 50 158 L 70 158 L 72 62 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M 60 158 L 60 188 L 45 194 L 75 194 L 60 188" stroke="var(--ink)" stroke-width="1.2" fill="none"/>
+            <circle cx="58" cy="100" r="0.8" fill="#F4D2D8"/>
+            <circle cx="62" cy="115" r="0.6" fill="#F4D2D8"/>
+            <circle cx="56" cy="125" r="0.7" fill="#F4D2D8"/>
+            <circle cx="64" cy="140" r="0.5" fill="#F4D2D8"/>
+          </svg>
+        </div>
+
+        <div class="beer__body">
+          <h3 class="beer__name">Pomegranate <span>Cider</span></h3>
+          <dl class="beer__stats">
+            <div><dt>ABV</dt><dd>5.0%</dd></div>
+            <div><dt>Style</dt><dd>Méthode champenoise cider</dd></div>
+            <div><dt>Note</dt><dd>Gluten-free</dd></div>
+          </dl>
+          <p class="beer__desc">
+            Annual release, fermented with champagne yeast and pomegranates from a tree we drive past every fall. Tart, dry, ruby-bright. Pours like rosé.
+          </p>
+          <ul class="beer__notes">
+            <li>tart</li><li>dry</li><li>ruby</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Empty card / "and one more soon" -->
+      <article class="beer beer--coming">
+        <div class="beer--coming__inner">
+          <span class="beer--coming__label">Tap Nº 06</span>
+          <span class="beer--coming__big">?</span>
+          <span class="beer--coming__sub">A surprise pour. Ask the brewer.</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════ CELLAR / COMING SOON ═══════════════ -->
+  <section class="cellar" id="cellar">
+    <div class="section__head">
+      <span class="section__label">§ III</span>
+      <h2 class="section__title">From the Cellar — Forthcoming</h2>
+      <span class="section__label section__label--right">Conditioning now</span>
+    </div>
+
+    <p class="cellar__intro">
+      Resting in tanks, oak, or carboys. We'll text the list when one breaks the surface.
+    </p>
+
+    <div class="cellar__grid">
+
+      <article class="upcoming">
+        <div class="upcoming__art" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <radialGradient id="lager-grad" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#F0D77F"/>
+                <stop offset="100%" stop-color="#C99A2B"/>
+              </radialGradient>
+            </defs>
+            <circle cx="100" cy="100" r="80" fill="url(#lager-grad)" opacity="0.35"/>
+            <circle cx="100" cy="100" r="80" fill="none" stroke="var(--paper)" stroke-width="0.6"/>
+            <circle cx="100" cy="100" r="50" fill="none" stroke="var(--paper)" stroke-width="0.4"/>
+            <text x="100" y="106" font-family="Fraunces, serif" font-size="48" font-weight="700" text-anchor="middle" fill="var(--paper)">PB</text>
+          </svg>
+        </div>
+        <div class="upcoming__body">
+          <span class="upcoming__eta">↓ next up</span>
+          <h3 class="upcoming__name">Pablo Bunyon</h3>
+          <p class="upcoming__style">Mexican-style lager · ~6.0% ABV</p>
+          <p class="upcoming__desc">A clean, lime-friendly lager with a honest backbone — built for the long Davis summer.</p>
+        </div>
+      </article>
+
+      <article class="upcoming">
+        <div class="upcoming__art" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <radialGradient id="midnight-grad" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#3B2218"/>
+                <stop offset="100%" stop-color="#0F0805"/>
+              </radialGradient>
+            </defs>
+            <circle cx="100" cy="100" r="80" fill="url(#midnight-grad)"/>
+            <circle cx="100" cy="100" r="80" fill="none" stroke="var(--paper)" stroke-width="0.6"/>
+            <circle cx="100" cy="100" r="50" fill="none" stroke="var(--paper)" stroke-width="0.4"/>
+            <text x="100" y="106" font-family="Fraunces, serif" font-size="48" font-weight="700" text-anchor="middle" fill="var(--paper)">MR</text>
+            <!-- tiny stars -->
+            <circle cx="60" cy="60" r="0.8" fill="var(--paper)"/>
+            <circle cx="140" cy="70" r="0.6" fill="var(--paper)"/>
+            <circle cx="150" cy="135" r="0.8" fill="var(--paper)"/>
+            <circle cx="55" cy="140" r="0.6" fill="var(--paper)"/>
+          </svg>
+        </div>
+        <div class="upcoming__body">
+          <span class="upcoming__eta">↓ resting in oak</span>
+          <h3 class="upcoming__name">Midnight Reserve</h3>
+          <p class="upcoming__style">Barrel-aged sweet stout · 13%+ ABV</p>
+          <p class="upcoming__desc">Coconut-and-vanilla-conditioned imperial stout, sleeping in bourbon oak until the night feels right.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════════ GATHERING / EVENTS ═══════════════ -->
+  <section class="gathering" id="gathering">
+    <div class="section__head section__head--inverse">
+      <span class="section__label">§ IV</span>
+      <h2 class="section__title">Gatherings &amp; Spills</h2>
+      <span class="section__label section__label--right">Annual</span>
+    </div>
+
+    <div class="gathering__lead">
+      <p>
+        Once a year — usually around the shortest days — we open the garage for the <strong>Annual Holiday Pour.</strong> Friends, neighbors, regulars, and the curious crowd in for whatever's on, plus a bottle or two we've been hiding all year.
+      </p>
+      <p class="gathering__sub">A small album from the seventh.</p>
+    </div>
+
+    <div class="gathering__gallery">
+      <figure class="polaroid polaroid--a">
+        <div class="polaroid__img" style="background-image:url('images/holiday-4.png')"></div>
+        <figcaption>The invitation goes out</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--b">
+        <div class="polaroid__img" style="background-image:url('images/holiday-2.png')"></div>
+        <figcaption>Carolers under the lights</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--c">
+        <div class="polaroid__img" style="background-image:url('images/holiday-1.png')"></div>
+        <figcaption>Pouring the first glass</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--d">
+        <div class="polaroid__img" style="background-image:url('images/holiday-3.png')"></div>
+        <figcaption>Cake, candles, regulars</figcaption>
+      </figure>
+      <figure class="polaroid polaroid--e">
+        <div class="polaroid__img" style="background-image:url('images/holiday-5.png')"></div>
+        <figcaption>The band came through</figcaption>
+      </figure>
+    </div>
+
+    <p class="gathering__foot">
+      Want an invite to next year's? <a href="#visit">Send a text</a>.
+    </p>
+  </section>
+
+  <!-- ═══════════════ VISIT ═══════════════ -->
+  <section class="visit" id="visit">
+    <div class="section__head">
+      <span class="section__label">§ V</span>
+      <h2 class="section__title">Plan a Visit</h2>
+      <span class="section__label section__label--right">By appointment</span>
+    </div>
+
+    <div class="visit__layout">
+
+      <article class="visiting-card">
+        <div class="visiting-card__corner visiting-card__corner--tl"></div>
+        <div class="visiting-card__corner visiting-card__corner--tr"></div>
+        <div class="visiting-card__corner visiting-card__corner--bl"></div>
+        <div class="visiting-card__corner visiting-card__corner--br"></div>
+
+        <div class="visiting-card__inner">
+          <p class="visiting-card__pre">— Calling Card —</p>
+          <h3 class="visiting-card__name">Pacific Nomad Brewing</h3>
+          <p class="visiting-card__loc">Davis, California</p>
+
+          <div class="visiting-card__rule"></div>
+
+          <dl class="visiting-card__list">
+            <div>
+              <dt>Hours</dt>
+              <dd>By appointment only</dd>
+            </div>
+            <div>
+              <dt>Text</dt>
+              <dd><a href="sms:+19164029885">(916) 402-9885</a></dd>
+            </div>
+            <div>
+              <dt>Mail</dt>
+              <dd><a href="mailto:pacificnomadbrewing@gmail.com">pacificnomadbrewing@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Follow</dt>
+              <dd><a href="https://instagram.com/pacificnomadbrewing" target="_blank" rel="noopener">@pacificnomadbrewing</a></dd>
+            </div>
+          </dl>
+
+          <div class="visiting-card__rule"></div>
+
+          <p class="visiting-card__note">
+            We're a one-person operation. A text the day before is gold; a few days' notice is better. Tell us how many are coming and what you've been curious to try — we'll set aside a flight.
+          </p>
+        </div>
+      </article>
+
+      <aside class="visit__aside">
+        <h4 class="visit__aside-title">What to expect</h4>
+        <ol class="visit__steps">
+          <li>
+            <span class="visit__step-num">01</span>
+            <span class="visit__step-text">Send a text. Day, time, party size.</span>
+          </li>
+          <li>
+            <span class="visit__step-num">02</span>
+            <span class="visit__step-text">We confirm and share the address.</span>
+          </li>
+          <li>
+            <span class="visit__step-num">03</span>
+            <span class="visit__step-text">Pull up to the garage. Pour, talk, taste.</span>
+          </li>
+          <li>
+            <span class="visit__step-num">04</span>
+            <span class="visit__step-text">Take a bottle home if there's one to spare.</span>
+          </li>
+        </ol>
+
+        <p class="visit__resp">
+          Please drink responsibly. We don't pour for guests under 21, and we love a designated driver.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer__seal" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="0.3"/>
+        <text x="50" y="56" font-family="Fraunces, serif" font-size="22" font-weight="700" text-anchor="middle" fill="currentColor">PN</text>
+      </svg>
+    </div>
+    <p class="footer__motto">
+      <em>Brewed by hand · poured by appointment · Davis, California</em>
+    </p>
+
+    <ul class="footer__links">
+      <li><a href="#almanac">Almanac</a></li>
+      <li><a href="#tap">On Tap</a></li>
+      <li><a href="#cellar">Cellar</a></li>
+      <li><a href="#gathering">Gatherings</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="https://instagram.com/pacificnomadbrewing" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+
+    <p class="footer__legal">
+      © <span id="year">2026</span> Pacific Nomad Brewing. Please drink responsibly. Designed in Davis.
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
